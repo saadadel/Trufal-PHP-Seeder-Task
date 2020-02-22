@@ -17,6 +17,7 @@ class MovieDatabaseSeeder extends Seeder
         Model::unguard();
 
         
-        // $this->call("OthersTableSeeder");
+        $this->call(CategoryTableSeeder::class);
+        $this->call(MovieTableSeeder::class);
     }
 }
